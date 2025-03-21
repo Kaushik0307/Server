@@ -31,8 +31,6 @@ const io = new Server (server, {
       console.log("User Disconnected", socket.id);
     });
 });
-const PORT = process.env.PORT || 3001;
-
-server.listen(PORT, () => {
-  console.log(`SERVER RUNNING on port ${PORT}`);
-});
+server.listen(3001, () => {
+  console.log("SERVER RUNNING");
+}); 
